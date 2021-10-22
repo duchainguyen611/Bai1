@@ -1,0 +1,422 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#top{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+.menu-left,.menu-right{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.merch{
+    display: none;
+}
+
+.menu-left a{
+    flex-basis: 1;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;  
+}
+
+.menu-left a:hover{
+    color: #000;
+    background: #ccc;
+}
+
+.menu-left button{
+    padding: 12px 24px;
+    color: #fff;
+    background: #000;
+    border: none;
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.menu-left .dropdown :hover{
+    color: #000;
+    background: #ccc;
+}
+
+.menu-left .dropdown:hover .list{
+    visibility: visible;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+.list a{
+    padding: 8px 16px;
+    background: #fff;
+    color: #000;
+    min-width: 160px;
+}
+
+.menu-right a{
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.icon-search{
+    display: block;
+}
+
+.menu-search{
+    display: none;
+}
+
+.menu-right a:hover{
+    background: red;
+}
+
+#slide{
+    position: relative;
+    padding-top: 40px;
+}
+
+.img-slide img{
+    width: 100%;
+}
+.text-slide{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,0%);
+}
+.text-slide h3{
+    color: #fff;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.text-slide b{
+    color: #fff;
+    margin: 15px 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#band{
+    padding: 64px 0;
+    max-width: 800px;
+    margin: auto;
+}
+.band-content{
+    padding: 0.01em 16px;
+}
+
+.band-content h2{
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.band-content small{
+    display: block;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.6;
+    font-weight: 600;
+}
+
+.band-content .band-text{
+    text-align: justify;
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom: 50px;
+}
+.band-mem{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mem-infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mem-infor p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mem-infor img{
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+#tour{
+    padding: 64px 0;
+    background: #000;
+}
+
+.tour-content{
+    padding: 0.01em 16px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.tour-content h2{
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.tour-content small{
+    display: block;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.6;
+    font-weight: 600;
+    color: #fff;
+}
+
+.number-ticket{
+    margin: 30px 0;
+}
+.number-ticket li{
+    width: 100%;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+    font-weight: 600;
+}
+
+.number-ticket li span{
+    background: red;
+    padding: 0 8px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 16px;
+    text-align: center;
+}
+.ticket-available{
+    display: inline-block;
+    float: right;
+    padding: 0 8px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+}
+
+.content-ticket{
+    display: flex;
+    margin: 0 -16px;
+}
+.ticket{
+    background: #000;
+    padding: 0.01em 16px;
+}
+.infor-ticket{
+    background: #fff;
+}
+.ticket img{
+    width: 100%;
+    height: 20%;
+}
+.text-ticket{
+    padding: 0.01em 16px;
+    margin: 10px 0;
+}
+
+.text-ticket b{
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 10px;
+}
+.time-ticket{
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+.about-ticket{
+    margin-bottom: 10px;
+}
+.text-ticket button{
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    background: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.text-ticket button:hover{
+    color: #000;
+    background: #ccc;
+}
+
+#contact{
+    padding: 64px 0;
+    max-width: 800px;
+    margin: auto;
+}
+.contact-content{
+    padding: 0.01em 16px;
+}
+
+.contact-content h2{
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.contact-content small{
+    display: block;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.6;
+    font-weight: 600;
+}
+.contact-about{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact-left,.contact-right{
+    flex:1;
+}
+
+.contact-left p{
+    font-size: 18px;
+}
+
+.contact-right form{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.name-contact,.email-contact{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.mess-contact{
+    padding: 8px;
+    border: 1px solid #ccc;
+    grid-column: 1/3;
+}
+.contact-button{
+    grid-column: 2/3;
+    text-align: right;
+}
+.contact-button button{
+    width: min-content;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+.contact-button button:hover{
+    background: #ccc;
+    color: #000;
+}
+#location{
+    width: 100%;
+    
+}
+#location img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 0;
+    max-width: 800px;
+    margin: auto;
+}
+.icon{
+    text-align: center;
+}
+.icon i,.icon p,.icon a{
+    opacity: 0.6;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px){
+    .menu{
+        justify-content: unset;
+    }
+    .dropdown{
+        display: none;
+    }
+    .icon-search{
+        display:none;
+    }
+    .menu-search{
+        display: block;
+    }
+    .menu-left{
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu-dropdown a{
+        width: 100%;
+        background: #000;
+    }
+    .menu-dropdown{
+        top: 43px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .merch{
+        display: block;
+    }
+    .text-slide{
+        display: none;
+    }.band-mem{
+        flex-direction: column;
+    }
+    .content-ticket{
+        flex-direction: column;
+    }
+    .contact-about{
+        flex-direction: column;
+    }
+    .name-contact,.email-contact{
+        grid-column: 1/3;
+    }
+}
